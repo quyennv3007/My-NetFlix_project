@@ -1,0 +1,290 @@
+.Navigation{
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    transition-timing-function:ease-in ;
+    transition: all 1s;
+    z-index: 100;
+    border-bottom: 1px solid rgb(81,80,80);
+
+
+    @media only srceen and (max-width: 600px){
+        height: 100px;
+        
+    }
+
+
+    .navContainer {
+        background-color: rgb(51,51,51);
+        display:flex ;
+        align-items: center;
+        flex-direction: row;
+        justify-content: flex-start;
+        height: 100%;
+        
+        @media only srceen and (max-width: 600px){
+            flex-direction: column;
+
+        }
+        .logo{
+            width: 120px;
+            margin-left: 20px;
+            cursor: pointer;
+            img{
+                width: 100%;
+            }
+        }
+
+        .navSearch{
+            color:  var(--color-white);
+            padding-right: 20px;
+            display: flex;
+            justify-content: flex-end;
+            margin-left: 50px;
+           
+           
+
+            &:hover .iconSearch{
+                color: var(--color-white);
+            }
+            @media screen and (max-width:1300px) {
+                display: none;
+            }
+
+            .iconSearch{
+                width: 24px;
+                height: 24px;
+                cursor: pointer;
+                transform: translateX(286px) translateY(5px);
+                color: #bbb;
+                z-index: 11;
+
+
+                @media screen and (max-width: 1420px) {
+                  transform: translateX(186px) translateY(5px);
+                }                
+            }
+            input{
+                font-size: 14px;
+                border: 1px solid  rgb(170,170,170);
+                color: var(--color-white);
+                outline: none;
+                width: 300px;
+                padding: 6px  26px;
+                cursor: pointer;   
+                border-radius: 16px;             
+                background: rgb(51,51,51);
+                transition: width 0.5s;
+                opacity: 0.6;
+                z-index: 10;
+
+                @media screen and (max-width: 1420px) {
+                    width: 200px;
+
+                }
+             
+                &:focus{
+                    padding-left: 26px;
+                    width: 300px;
+                    cursor: text;
+                    border-color: rgb(82, 82, 228);
+                    border-radius: 16px; 
+                    opacity: 1;     
+
+                    @media screen and (max-width: 1420px) {
+                        width: 200px;
+    
+                    }
+                }
+            }
+        }
+    }
+}
+
+.Navbar{
+    color: rgb(170,170,170);
+    display: flex;
+    user-select: none;    
+    
+    .NavLink{
+        margin-left: 40px;
+
+        &:hover {
+            color: rgb(175,66,20);
+        }
+        @media screen and (max-width:1025px) {
+            margin-left: 15px;
+            
+        }
+    }
+
+    @media screen and (max-width:1300px) {
+        display: none;
+    }
+}
+
+
+.iconMenu{
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+    transform: translateX(24px) translateY(10px);
+    color: #bbb;
+    margin-bottom: 25px;
+    display: none;
+
+    @media screen and (max-width:1300px) {
+        display: block;
+    }
+}
+
+.Navbar-header-user{
+    display: flex;
+    position: absolute;
+    right: 50px;
+    
+
+    @media screen and (max-width: 1024px) {
+        right: 10px;
+    }
+
+    img{
+        margin-right: 10px;
+    }
+
+    .img-facebook{
+        width: 35px;
+        height: 35px;
+        border-radius: 50px;
+        margin-bottom: 8px;
+        cursor: pointer;
+    }
+
+}
+
+
+// search tìm kiếm
+
+.MenuSearch{
+    position: absolute;
+    width: 300px;
+    height: 100px;
+    background-color: rgb(17, 17, 17);
+    top: 25px;
+    border-top-left-radius:20px;
+    border-top-right-radius: 20px;
+    text-align: center;
+    opacity: 0.8;
+    display: none;
+    transition: opacity .3s;
+
+    @media screen and (max-width: 1420px) {
+        width: 200px;
+
+    }
+
+    span{
+       position: absolute;
+       color: rgb(238, 229, 229);
+       font-size: 15px;
+       top: 50%;
+       left: 60px;
+       opacity: 1;
+
+
+       @media screen and (max-width: 1420px) {
+        left: 10px;
+        font-size: 14px;
+
+    }
+    }
+}
+
+
+input:focus ~ .MenuSearch{
+    display: block;
+}
+
+
+.MenuCategory{
+    position: absolute;
+    padding-bottom: 10px;
+    left: -25px;
+    top: 69px;
+    max-width: 472px; 
+    width: 470px;   
+    background-color: rgb(10,10,10);
+    opacity: 0.8;
+    max-height: 290px;
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 2px solid rgb(81,80,80);
+
+    transform-origin: left center ;
+    transition: all 0.3s linear;  
+    
+  
+
+    li{
+        list-style: none;
+        margin: 10px 10px;
+        width: 90px;
+
+        &:hover{
+            color: rgb(196, 50, 50);
+        }
+    }
+}
+
+.img-user{
+    width: 50px;
+    height: 50px;
+    border: 2px solid rgb(91, 87, 87);
+    border-radius: 50px;
+    cursor: pointer;
+    
+}
+.img-user:hover ~ .Menu-user{
+    position: absolute;
+    right: 0;
+}
+
+.Menu-user{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 300px;
+    height: 100%;
+    background-color: rgb(10,10,10);
+    z-index: 1000;
+    opacity: 0.9;
+    color: rgb(190, 190, 190);
+    box-shadow: -2px -0px  5px rgb(193, 192, 192) ;
+    user-select: none;
+    padding: 0;
+    transition: all 0.3s linear;
+}
+.hideMenu{
+        display: none;
+
+        transition: all 0.3s linear;
+    
+}
+
+
+
+
+.icon-close{
+    font-size: 24px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1000;
+
+    &:hover{
+        color: rgb(247, 109, 109);
+    }
+}
+

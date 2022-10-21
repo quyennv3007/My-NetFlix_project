@@ -1,0 +1,156 @@
+.MenuContainer{
+
+
+    .TitleHeader{
+        margin: 10px;
+        height: 100px;
+        position: relative;
+        
+
+        .icon-close{
+            display: none;
+            font-size: 24px;            
+        }
+
+        .nameUser{
+          position: absolute;
+          top: 40px;
+          font-size: 16px;
+          font-weight: 500;
+        }
+        .Menu-title{
+            position: absolute;
+            top: 70px;
+            font-size: 12.5px;
+            font-weight: 500;
+            display: flex;
+            height: 30px;
+
+
+            
+
+            .information{
+               height: 100%;
+               line-height: 30px;
+               display: block;
+               cursor: pointer;
+            }
+            .Notification{
+                margin-left: 30px;
+                height: 100%;
+                line-height: 30px;
+                display: block;
+                cursor: pointer;
+            }
+        }
+        
+    }
+}
+
+.img-user-menu{
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    border: 2px solid rgb(91, 87, 87);
+    border-radius: 50px;
+    cursor: pointer;
+    margin: 0px 0px;
+    right: 0px;
+    top: 0;
+    
+    
+}
+
+.MenuBody{
+    padding: 10px 20px;
+    color: #19bffb;
+    font-size: 14px;
+    font-weight: 300;
+
+   
+
+    .Menu-information{
+        padding: 10px 0;
+        border-bottom: 1px solid #4f5151;
+        .Menu-content{
+            margin-bottom: 8px;
+            cursor: pointer;
+            .icon-body{
+                margin-right: 20px;
+            }
+            
+            &:hover{
+                color: #a2e6fe;
+            }
+        }
+    }
+}
+
+.logout-user{
+    font-size: 16px;
+    color: #bbbbbb;
+    margin-top: 20px;
+    font-weight: 400;
+    
+
+    .icon-logout{
+        font-size: 24px;
+        margin-right: 10px;
+        
+    }
+    span{
+        margin-bottom: 10px;
+        position: absolute;
+        margin-top: 2px;
+        cursor: pointer;
+    }
+}
+
+
+
+.Notification-body{
+    display: flex;
+    border-bottom: 1px solid  rgb(91, 87, 87);
+    font-size: 13px;
+    padding: 10px 0;
+
+    .Notification-content{
+       
+        div{
+            height: 45px;
+            overflow: hidden;
+            
+        }
+    }
+
+    .Notification-img{
+        width: 50px;
+        height: 50px;
+        margin-right: 10px;
+        margin-top: 8px;
+    }
+
+    .Notification-time{
+        color: #bbbbbb;
+        margin-top: 8px;
+    }
+}
+
+.border-bottom-left{
+    border-bottom: 3px solid rgb(2,133,181);
+    height: 3px;
+    width: 75px;
+    position: absolute;
+    top: 110px;
+    left: 8px;
+}
+
+.border-bottom-right{
+    border-bottom: 3px solid rgb(2,133,181);
+    height: 3px;
+    width: 75px;
+    right: 120px;
+    position: absolute;
+    top: 110px;
+}
+

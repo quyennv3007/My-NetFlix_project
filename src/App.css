@@ -1,0 +1,25 @@
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    vertical-align: baseline;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+:root{
+    --color-white: rgb(228, 218, 218);
+    --color-background: rgb(51,51,51);
+
+    --color-dark: rgb(23,24,24);
+    --color-green: rgb(92,223,92);
+}
+
+body {
+    font-family: 'ubuntu', sans-serif;
+    
+}

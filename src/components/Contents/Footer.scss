@@ -1,0 +1,38 @@
+.Footer-collection{
+    background-color: rgb(0,0,0);
+    .Footer-title{
+        background: #000 url(https://xemphim1080.com/build/img/bg-gradient.png) no-repeat top;
+        color: #ff4c00;
+        font-size: 24px;
+        height: 69px;
+        letter-spacing: 5px;
+        line-height: 69px;
+        margin-bottom: 0;
+        position: relative;
+        text-align: center;
+
+        h5{
+            font-size: 24px;
+            font-weight: 400;
+        }
+    }
+    .container{
+        position: relative;
+        width: 100%;
+
+
+        .container-tray{         
+            display: flex;  
+            flex-wrap: wrap;
+            margin-bottom: 60px;
+            margin: 0 auto ;
+            justify-content: center;
+
+        }
+    }
+}
+
+.collection-item{
+    padding: 2px;
+    display: inline;
+}
